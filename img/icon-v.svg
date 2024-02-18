@@ -1,0 +1,30 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="40" height="40" fill="#E5E5E5"/>
+<g clip-path="url(#clip0_0_1)">
+<rect width="1440" height="10431" transform="translate(-637 -2529)" fill="white"/>
+<g filter="url(#filter0_d_0_1)">
+<g clip-path="url(#clip1_0_1)">
+<path d="M20 55.5C39.6061 55.5 55.5 39.6061 55.5 20C55.5 0.393892 39.6061 -15.5 20 -15.5C0.393892 -15.5 -15.5 0.393892 -15.5 20C-15.5 39.6061 0.393892 55.5 20 55.5Z" fill="white" stroke="#DCDDEB"/>
+<path d="M19.6016 39.2031C30.4272 39.2031 39.2031 30.4272 39.2031 19.6016C39.2031 8.7759 30.4272 0 19.6016 0C8.7759 0 0 8.7759 0 19.6016C0 30.4272 8.7759 39.2031 19.6016 39.2031Z" fill="#0075FF"/>
+<path d="M17.6414 27.4423C17.1396 27.4423 16.6378 27.2502 16.2556 26.868L10.3751 20.9875C9.60869 20.2211 9.60869 18.9823 10.3751 18.2158C11.1415 17.4494 12.3803 17.4494 13.1468 18.2158L17.6414 22.7105L26.0564 14.2955C26.8228 13.5291 28.0616 13.5291 28.828 14.2955C29.5944 15.0619 29.5944 16.3008 28.828 17.0672L19.0272 26.868C18.645 27.2502 18.1432 27.4423 17.6414 27.4423Z" fill="#EDF5FF"/>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_0_1" x="-26" y="-22" width="92" height="92" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="5"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.0784314 0 0 0 0 0.0784314 0 0 0 0 0.168627 0 0 0 0.04 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+</filter>
+<clipPath id="clip0_0_1">
+<rect width="1440" height="10431" fill="white" transform="translate(-637 -2529)"/>
+</clipPath>
+<clipPath id="clip1_0_1">
+<path d="M-16 -9C-16 -12.866 -12.866 -16 -9 -16H49C52.866 -16 56 -12.866 56 -9V49C56 52.866 52.866 56 49 56H-9C-12.866 56 -16 52.866 -16 49V-9Z" fill="white"/>
+</clipPath>
+</defs>
+</svg>
