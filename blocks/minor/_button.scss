@@ -1,0 +1,29 @@
+.button {
+    @include flex-center(true);
+    @include fluid-text(18, 16);
+
+    background-color: var(--background-color-blue);
+    border-radius: var(--border-radius-s);
+    color: var(--font-color-white);
+    padding: 20px 40px;
+    white-space: nowrap;
+    border: none;
+    cursor: pointer;
+
+    &.button--light{
+        background-color: var(--background-color-grey);
+        color: black;
+        border: 1px solid rgb(105, 105, 105);
+        transition: background-color 0.5s ease 0s;
+
+    }
+    @include hover {
+        background-color: var(--background-color-dark);
+        color: var(--font-color-white);
+    }
+    @include mobile {
+        min-width: 256px;
+        padding: 15px 40px;
+    }
+
+}

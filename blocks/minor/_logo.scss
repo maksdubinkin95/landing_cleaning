@@ -1,0 +1,20 @@
+.logo {
+    &__image {
+        display: block;
+        @include desktop {
+            width: 165px;
+        }
+        @include tablet {
+            width: 120px;
+        }
+        @include mobile {
+            width: 165px;
+        }
+        path{
+            fill: var(--background-color-blue);
+        }
+        path:last-child{
+            fill: var(--background-color-dark);
+        }
+    }
+}

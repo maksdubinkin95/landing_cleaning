@@ -1,0 +1,43 @@
+.phone {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    color: var(--background-color-dark);
+
+
+    &__icon-wrapper {
+        @include flex-center;
+
+        width: 71px;
+        height: 71px;
+        border-radius: 50%;
+        background-color: var(--background-color-main);
+        border: var(--border);
+        box-shadow: var(--shadow);
+        @include mobile {
+            width: 50px;
+            height: 50px;
+        }
+
+        svg {
+            color: var(--background-color-blue);
+            @include mobile {
+                width: 50%;
+                height: 50%;
+            }
+        }
+    }
+    &__body {
+        display: flex;
+        flex-direction: column;
+    }
+    &__title {
+        @include fluid-text(18, 14);
+
+        color: var(--font-color-light);
+    }
+    &__description {
+        @include fluid-text(26, 22);
+        font-weight: 700;
+    }
+}

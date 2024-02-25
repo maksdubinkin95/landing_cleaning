@@ -1,0 +1,23 @@
+.instruction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__image-wrapper {
+        position: relative;
+        max-width: 270px;
+        height: 240px;
+        margin-bottom: 20px;
+    }
+    &__image {
+        width: 100%;
+        height: 100%;
+    }
+    &__title {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    &__description {
+        text-align: center;
+    }
+}

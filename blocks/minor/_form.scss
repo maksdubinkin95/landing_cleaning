@@ -1,0 +1,63 @@
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 673px;
+    gap: 30px;
+    padding: 85px 60px;
+    background-color: var(--background-color-main);
+    border-radius: var(--border-radius-m);
+
+    @include tablet {
+        max-width: 100%;
+    }
+    @include mobile {
+        padding: 45px 15px;
+        gap: 10px;
+    }
+    div {
+        flex-grow: 1;
+    }
+    label {
+        @include fluid-text(18, 14);
+        color: var(--font-color-dark);
+
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+    input{
+        width: 100%;
+        height: 60px;
+        padding: 10px;
+        border: var(--border);
+        border-radius: var(--border-radius-m);
+        box-shadow: var(--shadow);
+        
+        &:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px var(--background-color-blue);
+        }
+
+        @include mobile {
+            height: 45px;
+        }
+    }
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border: var(--border);
+        border-radius: var(--border-radius-l);
+        box-shadow: var(--shadow);
+        resize: none;
+        &:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px var(--background-color-blue);
+        }
+    }
+
+    ::placeholder {
+        @include fluid-text(16, 14);
+
+        color: #adb0c9;
+    }
+}

@@ -1,0 +1,70 @@
+.services {
+    padding: var(--padding-y-main) 0;
+    @include desktop {
+        padding: var(--padding-y-desktop) 0;
+    }
+    @include tablet {
+        padding: var(--padding-y-tablet) 0;
+    }
+    @include mobile {
+        padding: var(--padding-y-mobile) 0;
+    }
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 60px;
+        column-gap: 50px;
+        @include mobile {
+            flex-direction: column;
+            margin-bottom: 30px;
+        }
+    }
+    &__title {
+        @include mobile {
+            max-width: 500px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__slider {
+        position: relative;
+    }
+    &__list {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: calc((100% - 80px) / 3);
+        column-gap: 40px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        scrollbar-width: 0;
+        scroll-snap-align: start;
+
+        &.no-transition {
+            scroll-behavior: auto;
+        }
+        &.dragging {
+            li {
+                cursor: grab;
+                user-select: none;
+            }
+        }
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        @include tablet {
+            grid-auto-columns: calc((100% - 40px) / 2);
+        }
+        @include mobile {
+            grid-auto-columns: 100%;
+        }
+    }
+    &__item {
+        scroll-snap-align: start;
+        @include mobile {
+            border: none;
+        }
+    }
+}

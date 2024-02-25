@@ -1,0 +1,110 @@
+.footer {
+    padding: var(--padding-y-main) 0 10px;
+    @include desktop {
+        padding: var(--padding-y-desktop) 0 10px;
+    }
+    @include tablet {
+        padding: var(--padding-y-tablet) 0 10px;
+    }
+    @include mobile {
+        padding: var(--padding-y-mobile) 0 10px;
+    }
+
+    &__header {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 40px;
+        margin-bottom: 100px;
+
+        @include tablet {
+            grid-template-columns: repeat(3, 1fr);
+            margin-bottom: 60px;
+        }
+        @include mobile {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include mobile-low {
+            grid-template-columns: 1fr;
+        }
+    }
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 30px;
+    }
+    &__quality {
+        @include tablet {
+            display: none;
+        }
+    }
+    &__adress-title {
+        @include mobile-low{
+            text-align: center;
+        }
+    }
+    &__adress-description {
+        @include mobile-low{
+            text-align: center;
+        }
+    }
+    &__hours {
+        @include mobile-low {
+            display: none;
+        }
+    }
+    &__contacts {
+        @include mobile {
+            display: none;
+        }
+    }
+    &__quality-title {
+        @include fluid-text(28, 24);
+        color: var(--background-color-dark);
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    &__adress-title,
+    &__hours-title,
+    &__contacts-title {
+        @include fluid-text(20, 18);
+        color: var(--background-color-dark);
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+    &__quality-description,
+    &__adress-description,
+    &__hours-description,
+    &__contacts-description {
+        @include fluid-text(18, 16);
+
+        color: var(--font-color-light);
+        span {
+            font-weight: 700;
+            color: var(--font-color-dark);
+        }
+    }
+    &__contacts-phone {
+        @include fluid-text(28, 24);
+
+        color: var(--background-color-blue);
+
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    &__contacts-button {
+        margin-top: 20px;
+    }
+    .logo {
+        @include mobile-low {
+            display: none;
+        }
+    }
+    &__copyrites {
+        @include fluid-text(18, 16);
+        color: var(--font-color-light);
+        @include mobile-low {
+            text-align: center;
+        }
+    }
+}

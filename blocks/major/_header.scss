@@ -1,0 +1,50 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    padding: 30px 0;
+    background-color: var(--background-color-main);
+    @include fluid-text(18, 16);
+    @include desktop {
+        padding: 20px 0;
+    }
+    &__inner {
+        display: flex;
+        align-items: center;
+        column-gap: 40px;
+        @include tablet {
+            column-gap: 20px;
+        }
+        @include mobile {
+            justify-content: space-between;
+        }
+    }
+    &__menu {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        &-list {
+            display: flex;
+            margin-right: auto;
+            column-gap: 30px;
+            @include tablet {
+                column-gap: 15px;
+            }
+        }
+        &-link {
+            color: var(--background-color-dark);
+            white-space: nowrap;
+        }
+        &-button.button {
+            height: 54px;
+            @include tablet {
+                padding: 20px 15px;
+            }
+        }
+    }
+    &.disabled {
+        visibility: hidden;
+    }
+}

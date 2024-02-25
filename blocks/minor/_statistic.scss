@@ -1,0 +1,62 @@
+.statistic {
+    display: flex;
+    column-gap: 7px;
+    align-items: center;
+    @include mobile {
+        flex-direction: column;
+    }
+    &__description {
+        @include mobile {
+            text-align: center;
+            margin-bottom: 5px;
+        }
+    }
+    &__title {
+        @include mobile {
+            text-align: center;
+        }
+    }
+    &__icon-wrapper {
+        @include flex-center;
+
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+        border: var(--border);
+        @include mobile {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+    }
+    svg {
+        width: 100%;
+        @include mobile {
+            width: 50%;
+        }
+    }
+    &__icon-hearts {
+        :first-child {
+            color: var(--background-color-blue);
+        }
+        :last-child {
+            color: var(--background-color-dark);
+        }
+    }
+    &__icon-v {
+        :first-child {
+            color: var(--background-color-blue);
+        }
+        :last-child {
+            color: var(--background-color-main);
+        }
+    }
+    &__icon-user {
+        :first-child {
+            color: var(--background-color-dark);
+        }
+        :last-child {
+            color: var(--background-color-blue);
+        }
+    }
+}

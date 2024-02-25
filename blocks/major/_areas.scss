@@ -1,0 +1,70 @@
+.areas {
+    padding: var(--padding-y-main) 0;
+    @include desktop {
+        padding: var(--padding-y-desktop) 0;
+    }
+    @include tablet {
+        padding: var(--padding-y-tablet) 0;
+    }
+    @include mobile {
+        padding: var(--padding-y-mobile) 0;
+    }
+    &__inner {
+        display: flex;
+        column-gap: 30px;
+        @include mobile {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &__image {
+        width: 50%;
+        @include mobile {
+            width: 60%;
+        }
+    }
+    &__body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        padding: 20px;
+        @include mobile {
+            align-items: center;
+        }
+    }
+    &__title {
+        margin-bottom: 20px;
+        @include mobile {
+            text-align: center;
+        }
+    }
+    &__description {
+        margin-bottom: 35px;
+        @include mobile {
+            text-align: center;
+        }
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 15px;
+        margin-bottom: 35px;
+
+    }
+    &__item {
+        position: relative;
+        padding-left: 35px;
+        white-space: nowrap;
+        color: var(--font-color-dark);
+        font-weight: 700;
+        &::before {
+            position: absolute;
+            content: url(../../img/checkmark.svg);
+            left: 0px;
+            top: -2px;
+        }
+    }
+
+}

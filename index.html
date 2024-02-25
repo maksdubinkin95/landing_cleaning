@@ -1,470 +1,234 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Cleaning X</title>
-        <!-- <link href="css/frame.css" rel="stylesheet" />   -->
+        <!-- <link href="css/frame.css" rel="stylesheet" /> -->
+        <link href="./styles/css/styles.css" rel="stylesheet" />
+        <script src="js/general.js" defer></script>
+        <script src="js/slider_instructions.js" defer></script>
+        <script src="js/slider_services.js" defer></script>
     </head>
     <body class="page">
         <header class="header">
-            <div class="header__inner container">
-                <a href="" class="header__logo logo">
-                    <img
-                        class="logo__image"
-                        src="img/logo.svg"
-                        alt="Cleaning X"
-                    />
-                </a>
-                <nav class="header__menu hidden-mobile">
-                    <ul class="header__menu-list">
-                        <li class="header__menu-item">
-                            <a href="" class="header__menu-link">Главная </a>
-                            <span class="header__menu-arrow"></span>
-                            <ul class="header__menu-sub-list visually-hidden">
-                                <li class="header__menu-sub-item">
-                                    <a href="" class="header__menu-sub-link"
-                                        >Home Chapter 1
-                                    </a>
-                                </li>
-                                <li class="header__menu-sub-item">
-                                    <a href="" class="header__menu-sub-link"
-                                        >Home Chapter 2
-                                    </a>
-                                </li>
-                                <li class="header__menu-sub-item">
-                                    <a href="" class="header__menu-sub-link"
-                                        >Home Chapter 3
-                                    </a>
-                                </li>
-                                <li class="header__menu-sub-item">
-                                    <a href="" class="header__menu-sub-link"
-                                        >Home Chapter 4
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="header__menu-item">
-                            <a href="" class="header__menu-link">Про нас </a>
-                            <span class="header__menu-arrow"></span>
-                            <ul class="header__menu-sub-list visually-hidden">
-                                <li class="header__menu-sub-item">
-                                    <a href="" class="header__menu-sub-link"
-                                        >About Chapter 1
-                                    </a>
-                                </li>
-                                <li class="header__menu-sub-item">
-                                    <a href="" class="header__menu-sub-link"
-                                        >About Chapter 2
-                                    </a>
-                                </li>
-                                <li class="header__menu-sub-item">
-                                    <a href="" class="header__menu-sub-link"
-                                        >About Chapter 3
-                                    </a>
-                                </li>
-                                <li class="header__menu-sub-item">
-                                    <a href="" class="header__menu-sub-link"
-                                        >About Chapter 4
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="header__menu-item">
-                            <a href="" class="header__menu-link">Услуги </a>
-                            <span class="header__menu-arrow"></span>
-                            <ul class="header__menu-sub-list visually-hidden">
-                                <li class="header__menu-sub-item">
-                                    <a href="" class="header__menu-sub-link"
-                                        >Services Chapter 1
-                                    </a>
-                                </li>
-                                <li class="header__menu-sub-item">
-                                    <a href="" class="header__menu-sub-link"
-                                        >Services Chapter 2
-                                    </a>
-                                </li>
-                                <li class="header__menu-sub-item">
-                                    <a href="" class="header__menu-sub-link"
-                                        >Services Chapter 3
-                                    </a>
-                                </li>
-                                <li class="header__menu-sub-item">
-                                    <a href="" class="header__menu-sub-link"
-                                        >Services Chapter 4
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="header__menu-item">
-                            <a href="" class="header__menu-link">Публикации </a>
-                            <span class="header__menu-arrow"></span>
-                            <ul class="header__menu-sub-list visually-hidden">
-                                <li class="header__menu-sub-item">
-                                    <a href="" class="header__menu-sub-link"
-                                        >Pages Chapter 1
-                                    </a>
-                                </li>
-                                <li class="header__menu-sub-item">
-                                    <a href="" class="header__menu-sub-link"
-                                        >Pages Chapter 2
-                                    </a>
-                                </li>
-                                <li class="header__menu-sub-item">
-                                    <a href="" class="header__menu-sub-link"
-                                        >Pages Chapter 3
-                                    </a>
-                                </li>
-                                <li class="header__menu-sub-item">
-                                    <a href="" class="header__menu-sub-link"
-                                        >Pages Chapter 4
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="header__menu-item">
-                            <a href="" class="header__menu-link">Контакты </a>
-                            <span class="header__menu-arrow"></span>
-                            <ul class="header__menu-sub-list visually-hidden">
-                                <li class="header__menu-sub-item">
-                                    <a href="" class="header__menu-sub-link"
-                                        >Contact Chapter 1
-                                    </a>
-                                </li>
-                                <li class="header__menu-sub-item">
-                                    <a href="" class="header__menu-sub-link"
-                                        >Contact Chapter 2
-                                    </a>
-                                </li>
-                                <li class="header__menu-sub-item">
-                                    <a href="" class="header__menu-sub-link"
-                                        >Contact Chapter 3
-                                    </a>
-                                </li>
-                                <li class="header__menu-sub-item">
-                                    <a href="" class="header__menu-sub-link"
-                                        >Contact Chapter 4
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul class="header__menu-user-list">
-                        <li class="header__menu-user-item">
-                            <a class="header__menu-user-link"> Корзина (0) </a>
-                        </li>
-                        <li class="header__menu-user-item">
-                            <button
-                                href="/"
-                                class="header__menu-user-button button"
-                            >
-                                Оставить заявку
-                            </button>
-                        </li>
-                    </ul>
-                    <div class="header__menu-burger">
-                        <span></span>
-                    </div>
-                </nav>
+            <div class="container">
+                <div class="header__inner">
+                    <a href="/" class="header__logo logo">
+                        <img class="logo__image" src="img/logo.svg" alt="Изображение логотипа" />
+                    </a>
+                    <nav class="header__menu hidden-mobile">
+                        <ul class="header__menu-list">
+                            <li class="header__menu-item">
+                                <a href="#" data-goto=".instructions" class="header__menu-link">Сервис</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="#" data-goto=".statistics" class="header__menu-link">Статистика</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="#" data-goto=".services" class="header__menu-link">Услуги</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="#" data-goto=".areas" class="header__menu-link">Зоны</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="#" data-goto=".difference" class="header__menu-link">О нас</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="#" data-goto=".contacts" class="header__menu-link">Контакты</a>
+                            </li>
+                        </ul>
+                        <button data-goto=".contacts" class="header__menu-button button hidden-mobile">Оставить заявку</button>
+                    </nav>
+                    <button class="header__burger-button burger-button visible-mobile" onclick="mobileOverlay.showModal()">
+                        <span class="visually-hidden">Открыть навигационное меню</span>
+                    </button>
+                </div>
             </div>
         </header>
         <main class="content">
-            <section class="section__body">
-                <div class="primary">
-                    <div class="container">
+            <section class="primary">
+                <div class="container">
+                    <div class="primary__inner">
                         <div class="primary__body">
-                            <h1 class="primary__title">
-                                Качественная уборка вашего дома
-                            </h1>
-                            <p class="primary__desription">
-                                Приведи свой дом или офис в идеальный порядок с
-                                нашими профессиональными услугами по клинингу!
-                                Мы заботимся о каждой детали, чтобы ваше
-                                пространство сияло чистотой и свежестью.
-                            </p>
+                            <h1 class="primary__title">Качественная уборка вашего дома</h1>
+                            <p class="primary__desription">Приведи свой дом или офис в идеальный порядок с нашими профессиональными услугами по клинингу! Мы заботимся о каждой детали, чтобы ваше пространство сияло чистотой и свежестью.</p>
                             <div class="primary__backcall">
-                                <button href="" class="primary__button button">
-                                    Оставить заявку
-                                </button>
-                                <div class="primary__phone phone">
-                                    <img
-                                        class="phone__image"
-                                        src="img/icon-phone.svg"
-                                        alt=""
-                                    />
-                                    <div class="phone__body">
-                                        <p class="phone__title">
-                                            ПОЗВОНИТЬ СЕЙЧАС
-                                        </p>
-                                        <p class="telephone__description">
-                                            8 (414) 567-21-09
-                                        </p>
-                                    </div>
-                                </div>
+                                <button data-goto=".contacts" class="primary__button button">Оставить заявку</button>
+                                <a class="primary__phone phone" href="tel:">
+                                    <span class="phone__icon-wrapper">
+                                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M29.0856 35.3845C29.0732 35.3845 29.0609 35.3845 29.0485 35.3845C23.11 35.19 16.1529 29.4336 11.3595 24.6371C6.55989 19.8407 0.803488 12.8805 0.618288 6.9698C0.550388 4.8956 5.64019 1.2072 5.69259 1.1701C7.01369 0.250395 8.47979 0.577496 9.08169 1.4109C9.48909 1.9757 13.3473 7.8216 13.767 8.4853C14.2022 9.1736 14.1374 10.1983 13.5942 11.2261C13.2948 11.7971 12.3009 13.5441 11.8349 14.359C12.338 15.075 13.6683 16.8313 16.4153 19.5783C19.1654 22.3253 20.9186 23.6587 21.6377 24.1618C22.4526 23.6957 24.1996 22.7019 24.7706 22.4025C25.7829 21.8654 26.8015 21.7975 27.496 22.2235C28.2059 22.6587 34.0364 26.5354 34.5734 26.9088C35.0241 27.2268 35.3142 27.77 35.3728 28.4027C35.4284 29.0416 35.2309 29.7176 34.8204 30.3071C34.7864 30.3565 31.1412 35.3845 29.0856 35.3845Z" fill="#0075FF" />
+                                        </svg>
+                                    </span>
+                                    <span class="phone__body">
+                                        <span class="phone__title">Позвонить сейчас</span>
+                                        <span class="phone__description">8 (414) 567-21-09</span>
+                                    </span>
+                                </a>
                             </div>
                         </div>
-                    </div>
-                    <div class="primary__image-wrapper">
-                        <img class="primary__image" src="img/girl.svg" alt="" />
+                        <div class="primary__image-wrapper">
+                            <img class="primary__image" src="img/girl.svg" alt="Изоюражение с девушкой, которая пылесосит пол" />
+                        </div>
                     </div>
                 </div>
             </section>
-            <section class="section container">
-                <header class="section__header">
-                    <h2 class="section__title">Как мы работаем?</h2>
-                    <p class="section__description">
-                        Мы понимаем, что каждый клиент уникален. Поэтому мы
-                        разрабатываем персонализированные программы уборки,
-                        соответствующие вашим потребностям.
-                    </p>
-                </header>
-                <div class="section__body">
-                    <i id="left" class="fa-solid fa-angle-left"></i>
-                    <div class="instructions">
-                        <ul class="instructions__list">
-                            <li class="instructions__item instruction">
-                                <img
-                                    src="img/calendar.svg"
-                                    class="instruction__image"
-                                    alt=""
-                                    draggable="false"
-                                />
-                                <h3 class="instruction__title">
-                                    1. Онлайн расписание
-                                </h3>
-                                <p class="instruction__description">
-                                    Забронируйте время и день. Наши специалисты
-                                    свяжутся с вами.
-                                </p>
-                            </li>
-                            <li class="instructions__item instruction">
-                                <img
-                                    src="img/card.svg"
-                                    class="instruction__image"
-                                    alt=""
-                                    draggable="false"
-                                />
-                                <h3 class="instruction__title">
-                                    2. Простая оплата
-                                </h3>
-                                <p class="instruction__description">
-                                    Произведите оплату любым удобным для вас
-                                    способом.
-                                </p>
-                            </li>
-                            <li class="instructions__item instruction">
-                                <img
-                                    src="img/wash.svg"
-                                    class="instruction__image"
-                                    alt=""
-                                    draggable="false"
-                                />
-                                <h3 class="instruction__title">
-                                    3. Уборка по записи
-                                </h3>
-                                <p class="instruction__description">
-                                    Наши специалисты приедут и обеспечат высший
-                                    стандарт чистоты.
-                                </p>
-                            </li>
-                        </ul>
+            <section class="instructions">
+                <div class="container">
+                    <div class="instructions__header">
+                        <h2 class="instructions__title">Как мы работаем?</h2>
+                        <p class="instructions__description">Мы понимаем, что каждый клиент уникален. Поэтому мы разрабатываем персонализированные программы уборки, соответствующие вашим потребностям.</p>
                     </div>
-                    <i id="right" class="fa-solid fa-angle-right"></i>
-                </div>
-                <footer class="section__footer">
-                    <button href="" class="section__button button">
-                        Оставить заявку
-                    </button>
-                    <button href="" class="section__button button">
-                        Узнать больше
-                    </button>
-                </footer>
-            </section>
-            <section class="section container">
-                <header class="section__header">
-                    <h2 class="section__title">
-                        Нашим клининговым услугам нет равных
-                    </h2>
-                    <p class="section__description">
-                        Наши высококвалифицированные клининговые специалисты
-                        обеспечивают высший стандарт чистоты. Мы знаем, как
-                        добиться результатов, которые вас поразят.
-                    </p>
-                </header>
-                <div class="section__body">
-                    <div class="statistics">
-                        <div class="statistics__body">
-                            <ul class="statistics__list">
-                                <li class="statistics__item statisctic">
-                                    <img
-                                        class="statisctic__image"
-                                        src="img/icon-heart.svg"
-                                        alt=""
-                                    />
-                                    <div class="statisctic__body">
-                                        <p class="statisctic__description">
-                                            КЛИЕНТЫ
-                                        </p>
-                                        <h3 class="statisctic__title">
-                                            3,480+
-                                        </h3>
-                                    </div>
+                    <div class="instructions__body">
+                        <div class="instructions__slider">
+                            <i id="left" class="fa-solid fa-angle-left"></i>
+                            <ul class="instructions__list">
+                                <li class="instructions__item instruction">
+                                    <div class="instruction__image-wrapper"><img src="img/calendar.svg" class="instruction__image" alt="" draggable="false" alt="Изображение с календарем" /></div>
+                                    <h3 class="instruction__title">Онлайн расписание</h3>
+                                    <p class="instruction__description">Забронируйте время и день. Наши специалисты свяжутся с вами.</p>
                                 </li>
-                                <li class="statistics__item statisctic">
-                                    <img
-                                        class="statisctic__image"
-                                        src="img/icon-v.svg"
-                                        alt=""
-                                    />
-                                    <div class="statisctic__body">
-                                        <p class="statisctic__description">
-                                            УБОРКИ
-                                        </p>
-                                        <h3 class="statisctic__title">
-                                            12,540+
-                                        </h3>
-                                    </div>
+                                <li class="instructions__item instruction">
+                                    <div class="instruction__image-wrapper"><img src="img/card.svg" class="instruction__image" alt="" draggable="false" alt="Изображение с кредитной картой" /></div>
+                                    <h3 class="instruction__title">Простая оплата</h3>
+                                    <p class="instruction__description">Произведите оплату любым удобным для вас способом.</p>
                                 </li>
-                                <li class="statistics__item statisctic">
-                                    <img
-                                        class="statisctic__image"
-                                        src="img/icon-phone.svg"
-                                        alt=""
-                                    />
-                                    <div class="statisctic__body">
-                                        <p class="statisctic__description">
-                                            СОТРУДНИКИ
-                                        </p>
-                                        <h3 class="statisctic__title">100+</h3>
-                                    </div>
+                                <li class="instructions__item instruction">
+                                    <div class="instruction__image-wrapper"><img src="img/wash.svg" class="instruction__image" alt="" draggable="false" alt="Изображение с ведром и пылесосом" /></div>
+                                    <h3 class="instruction__title">Уборка по записи</h3>
+                                    <p class="instruction__description">Наши специалисты приедут и обеспечат высший стандарт чистоты.</p>
                                 </li>
                             </ul>
-                            <img
-                                class="statistics_image"
-                                src="img/video.svg"
-                                alt=""
-                            />
+                            <i id="right" class="fa-solid fa-angle-right"></i>
+                        </div>
+                        <div class="instructions__buttons">
+                            <button data-goto=".contacts" class="instructions__button button">Оставить заявку</button>
+                            <button data-goto=".areas" class="instructions__button button button--light">Узнать больше</button>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="section container">
-                <div class="section__header">
-                    <h2 class="section__title">
-                        Ознакомьтесь с нашими услугами
-                    </h2>
-                    <button href="" class="section__button button">
-                        Узнать больше
-                    </button>
-                </div>
-                <div class="section__body">
-                    <div class="services">
-                        <i id="left" class="fa-solid fa-angle-left"></i>
-                        <ul class="services__list">
-                            <li class="services__item service">
-                                <img
-                                    class="service__image"
-                                    src="img/house.svg"
-                                    alt=""
-                                />
-                                <h3 class="service__title">Уборка дома</h3>
-                                <p class="service__description">
-                                    Сделайте свой дом настоящим уютным убежищем
-                                    с нашими услугами по уборке.
-                                </p>
+            <section class="statistics">
+                <div class="container">
+                    <div class="statistics__header">
+                        <h2 class="statistics__title">Нашим клининговым услугам нет равных</h2>
+                        <p class="statistics__description">Наши высококвалифицированные клининговые специалисты обеспечивают высший стандарт чистоты. Мы знаем, как добиться результатов, которые вас поразят.</p>
+                    </div>
+                    <div class="statistics__body">
+                        <ul class="statistics__list">
+                            <li class="statistics__item statistic">
+                                <span class="statistic__icon-wrapper">
+                                    <svg class="statistic__icon-hearts" width="39" height="31" viewBox="0 0 39 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.3184 24.014C17.0479 21.7435 17.0479 18.0638 19.3184 15.7933C20.4528 14.6607 21.9412 14.0917 23.4279 14.0917C24.9146 14.0917 26.403 14.6589 27.5374 15.7933C27.784 16.0399 27.9901 16.3076 28.1839 16.5842C28.3776 16.3094 28.5837 16.0399 28.8303 15.7933C29.9647 14.6607 31.4531 14.0917 32.9398 14.0917C34.4265 14.0917 35.9149 14.6589 37.0493 15.7933C37.1251 15.869 37.1779 15.9589 37.2501 16.0381C39.6528 11.9533 39.1384 6.6266 35.6313 3.1196C33.551 1.041 30.8225 0 28.0958 0C25.369 0 22.6405 1.041 20.5602 3.1213C20.1093 3.5722 19.7306 4.0655 19.3765 4.571C19.0225 4.0655 18.6438 3.5722 18.1928 3.1213C16.1126 1.041 13.384 0 10.6573 0C7.9306 0 5.202 1.041 3.1218 3.1213C-1.0406 7.2837 -1.0406 14.0301 3.1218 18.1924C4.9308 20.0014 15.8765 29.1064 16.6357 29.8656C17.3931 30.623 18.3848 31 19.3765 31C20.3682 31 21.36 30.6213 22.1174 29.8656C22.2953 29.6877 23.0439 29.043 24.0902 28.1517C22.2055 26.5523 19.8997 24.5953 19.3184 24.014Z" fill="#0075FF" />
+                                        <path d="M37.0495 15.7946C35.9151 14.6603 34.4267 14.0913 32.94 14.0913C31.4533 14.0913 29.9649 14.6585 28.8305 15.7929C28.5839 16.0395 28.3778 16.3072 28.1841 16.5838C27.9903 16.3072 27.7842 16.0395 27.5376 15.7929C26.4032 14.6603 24.9148 14.0913 23.4281 14.0913C21.9414 14.0913 20.453 14.6585 19.3186 15.7929C17.0481 18.0634 17.0481 21.7431 19.3186 24.0136C20.305 25.0001 26.2746 29.9656 26.6886 30.3796C27.1025 30.7935 27.6433 30.9978 28.1841 30.9978C28.7248 30.9978 29.2656 30.7917 29.6796 30.3796C30.0953 29.9656 36.0649 24.9983 37.0495 24.0136C39.32 21.7431 39.32 18.0652 37.0495 15.7946Z" fill="#123578" />
+                                    </svg>
+                                </span>
+                                <div class="statistic__body">
+                                    <p class="statistic__description">КЛИЕНТЫ</p>
+                                    <h3 class="statistic__title">3,480+</h3>
+                                </div>
                             </li>
-                            <li class="services__item service">
-                                <img
-                                    class="service__image"
-                                    src="img/office.svg"
-                                    alt=""
-                                />
-                                <h3 class="service__title">Уборка офиса</h3>
-                                <p class="service__description">
-                                    Привнесите чистоту и комфорт в ваш офис с
-                                    нашими профессиональными услугами уборки!
-                                </p>
+                            <li class="statistics__item statistic">
+                                <span class="statistic__icon-wrapper">
+                                    <svg class="statistic__icon-v" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.6016 39.2031C30.4272 39.2031 39.2031 30.4272 39.2031 19.6016C39.2031 8.7759 30.4272 0 19.6016 0C8.7759 0 0 8.7759 0 19.6016C0 30.4272 8.7759 39.2031 19.6016 39.2031Z" fill="#0075FF" />
+                                        <path d="M17.6414 27.4423C17.1396 27.4423 16.6378 27.2502 16.2556 26.868L10.3751 20.9875C9.60869 20.2211 9.60869 18.9823 10.3751 18.2158C11.1415 17.4494 12.3803 17.4494 13.1468 18.2158L17.6414 22.7105L26.0564 14.2955C26.8228 13.5291 28.0616 13.5291 28.828 14.2955C29.5944 15.0619 29.5944 16.3008 28.828 17.0672L19.0272 26.868C18.645 27.2502 18.1432 27.4423 17.6414 27.4423Z" fill="#EDF5FF" />
+                                    </svg>
+                                </span>
+                                <div class="statistic__body">
+                                    <p class="statistic__description">УБОРКИ</p>
+                                    <h3 class="statistic__title">12,540+</h3>
+                                </div>
                             </li>
-                            <li class="services__item service">
-                                <img
-                                    class="service__image"
-                                    src="img/industrial.svg"
-                                    alt=""
-                                />
-                                <h3 class="service__title">
-                                    Уборка производства
-                                </h3>
-                                <p class="service__description">
-                                    Обеспечьте безопасность и эффективность
-                                    вашего производственного процесса с нашими
-                                    услугами уборки.
-                                </p>
+                            <li class="statistics__item statistic">
+                                <span class="statistic__icon-wrapper">
+                                    <svg class="statistic__icon-user" width="30" height="35" viewBox="0 0 30 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22.206 20.5879H7.79428C3.81458 20.5879 0.588379 23.8141 0.588379 27.7938C0.588379 31.7735 3.81458 34.9997 7.79428 34.9997H22.206C26.1857 34.9997 29.4119 31.7735 29.4119 27.7938C29.4119 23.8141 26.1857 20.5879 22.206 20.5879Z" fill="#123578" />
+                                        <path d="M14.9999 16.4706C19.5482 16.4706 23.2352 12.7835 23.2352 8.2353C23.2352 3.6871 19.5482 0 14.9999 0C10.4517 0 6.76459 3.6871 6.76459 8.2353C6.76459 12.7835 10.4517 16.4706 14.9999 16.4706Z" fill="#0075FF" />
+                                    </svg>
+                                </span>
+                                <div class="statistic__body">
+                                    <p class="statistic__description">СОТРУДНИКИ</p>
+                                    <h3 class="statistic__title">100+</h3>
+                                </div>
                             </li>
                         </ul>
-                        <i id="right" class="fa-solid fa-angle-right"></i>
+                        <img class="statistics__image" src="img/video.svg" alt="" alt="Изображение с видео-плеером" />
                     </div>
                 </div>
             </section>
-            <section class="section container">
-                <div class="section__body">
-                    <div class="warning">
-                        <img
-                            class="warning__image"
-                            src="img/girl-2.svg"
-                            alt=""
-                        />
+            <section class="services">
+                <div class="container">
+                    <div class="services__header">
+                        <h2 class="services__title">Ознакомьтесь с нашими услугами</h2>
+                        <button data-goto=".areas" class="services__button button button--light">Узнать больше</button>
+                    </div>
+                    <div class="services__body">
+                        <div class="services__slider">
+                            <i id="left" class="fa-solid fa-angle-left"></i>
+                            <ul class="services__list">
+                                <li class="services__item service">
+                                    <div class="service__image-wrapper"><img class="service__image" src="img/house.svg" alt="Изображение с домом" draggable="false" /></div>
+                                    <h3 class="service__title">Уборка дома</h3>
+                                    <p class="service__description">Сделайте свой дом настоящим уютным убежищем с нашими услугами по уборке.</p>
+                                </li>
+                                <li class="services__item service" draggable="false">
+                                    <div class="service__image-wrapper">
+                                        <img class="service__image" src="img/office.svg" alt="Изображение с офисом" draggable="false" />
+                                    </div>
+                                    <h3 class="service__title">Уборка офиса</h3>
+                                    <p class="service__description">Привнесите чистоту и комфорт в ваш офис с нашими профессиональными услугами уборки!</p>
+                                </li>
+                                <li class="services__item service" draggable="false">
+                                    <div class="service__image-wrapper">
+                                        <img class="service__image" src="img/industrial.svg" alt="Изображение с заводом" draggable="false" />
+                                    </div>
+                                    <h3 class="service__title">Уборка производства</h3>
+                                    <p class="service__description">Обеспечьте безопасность и эффективность вашего производственного процесса с нашими услугами уборки.</p>
+                                </li>
+                            </ul>
+                            <i id="right" class="fa-solid fa-angle-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="warning">
+                <div class="container">
+                    <div class="warning__inner">
+                        <img class="warning__image" src="img/girl-2.svg" alt="Изображение с девушкой, которая протирает пыль" />
                         <div class="warning__body">
-                            <p class="warning__description">
-                                COVID-24 ДЕЗИНФЕКЦИЯ
-                            </p>
-                            <h2 class="warning__title">
-                                Мы соблюдаем правила, чтобы защитить вас от
-                                вируса COVID-24.
-                            </h2>
-                            <p class="warning__description">
-                                Наша компания предлагает профессиональные услуги
-                                по дезинфекции, используя эффективные средства и
-                                методы, что особенно важно в случае
-                                подтвержденных случаев COVID-24 или для
-                                профилактики в высокорискованных областях.
-                            </p>
-                            <div class="warning__phone phone">
-                                <img
-                                    class="phone__image"
-                                    src="img/icon-phone.svg"
-                                    alt=""
-                                />
-                                <div class="phone__body">
-                                    <p class="phone__title">ПОЗВОНИТЬ СЕЙЧАС</p>
-                                    <p class="telephone__description">
-                                        8 (414) 567-21-09
-                                    </p>
-                                </div>
+                            <div class="warning__text">
+                                <p class="warning__caution">COVID-24 ДЕЗИНФЕКЦИЯ</p>
+                                <h2 class="warning__title">Мы соблюдаем правила защиты от вируса COVID-24</h2>
+                                <p class="warning__description">Наша компания предлагает профессиональные услуги по дезинфекции, используя эффективные средства и методы, что особенно важно в случае подтвержденных случаев COVID-24 или для профилактики в высокорискованных областях.</p>
+                            </div>
+                            <div class="warning__backcall">
+                                <button data-goto=".contacts" class="warning__button warning__button--light button">Оставить заявку</button>
+                                <a class="warning__phone phone" href="tel:">
+                                    <span class="phone__icon-wrapper">
+                                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M29.0856 35.3845C29.0732 35.3845 29.0609 35.3845 29.0485 35.3845C23.11 35.19 16.1529 29.4336 11.3595 24.6371C6.55989 19.8407 0.803488 12.8805 0.618288 6.9698C0.550388 4.8956 5.64019 1.2072 5.69259 1.1701C7.01369 0.250395 8.47979 0.577496 9.08169 1.4109C9.48909 1.9757 13.3473 7.8216 13.767 8.4853C14.2022 9.1736 14.1374 10.1983 13.5942 11.2261C13.2948 11.7971 12.3009 13.5441 11.8349 14.359C12.338 15.075 13.6683 16.8313 16.4153 19.5783C19.1654 22.3253 20.9186 23.6587 21.6377 24.1618C22.4526 23.6957 24.1996 22.7019 24.7706 22.4025C25.7829 21.8654 26.8015 21.7975 27.496 22.2235C28.2059 22.6587 34.0364 26.5354 34.5734 26.9088C35.0241 27.2268 35.3142 27.77 35.3728 28.4027C35.4284 29.0416 35.2309 29.7176 34.8204 30.3071C34.7864 30.3565 31.1412 35.3845 29.0856 35.3845Z" fill="#0075FF" />
+                                        </svg>
+                                    </span>
+                                    <span class="phone__body">
+                                        <span class="phone__title">Позвонить сейчас</span>
+                                        <span class="phone__description">8 (414) 567-21-09</span>
+                                    </span>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="section container">
-                <div class="section__body">
-                    <div class="areas">
-                        <img
-                            class="areas__image"
-                            src="img/house-2.svg"
-                            alt=""
-                        />
+            <section class="areas">
+                <div class="container">
+                    <div class="areas__inner">
+                        <img class="areas__image" src="img/house-2.svg" alt="Изображение с домашними зонами" />
                         <div class="areas__body">
-                            <h2 class="areas__title">
-                                Мы охватим все помещения вашего дома или офиса
-                            </h2>
-                            <p class="areas__description">
-                                Компании по клинингу обычно предлагают широкий
-                                спектр услуг по уборке различных типов
-                                помещений. Вот несколько примеров типов
-                                помещений и поверхностей, которые часто убирают
-                                в услугах клининга:
-                            </p>
+                            <h2 class="areas__title">Мы охватим все помещения вашего дома или офиса</h2>
+                            <p class="areas__description">Компании по клинингу обычно предлагают широкий спектр услуг по уборке различных типов помещений. Вот несколько примеров типов помещений и поверхностей, которые часто убирают в услугах клининга:</p>
                             <ul class="areas__list">
                                 <li class="areas__item">Ванная комната</li>
                                 <li class="areas__item">Кухня</li>
@@ -475,253 +239,160 @@
                                 <li class="areas__item">Производство</li>
                                 <li class="areas__item">Окна</li>
                             </ul>
-                            <button href="" class="areas__button button">
-                                Оставить заявку
-                            </button>
+                            <button data-goto=".contacts" class="areas__button button">Оставить заявку</button>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="section container">
-                <div class="section__body">
-                    <div class="difference">
+            <section class="difference">
+                <div class="container">
+                    <div class="difference__inner">
                         <div class="difference__body">
-                            <h2 class="difference__title">
-                                Что отличает нас от других?
-                            </h2>
-                            <p class="difference__description">
-                                Мы отличаемся профессионализмом и многолетним
-                                опытом, предоставляя широкий спектр услуг для
-                                офисов, жилых помещений и промышленных объектов.
-                                Мы ипользуем только экологически чистые
-                                средства, и гибко подстраиваемся под ваш график
-                                и потребности. Наша репутация доверия и качества
-                                говорит сама за себя. Пригласите нас, и ваше
-                                пространство станет оазисом чистоты и комфорта.
-                            </p>
+                            <h2 class="difference__title">Что отличает нас от других?</h2>
+                            <p class="difference__description">Мы отличаемся профессионализмом и многолетним опытом, предоставляя широкий спектр услуг для офисов, жилых помещений и промышленных объектов. <br /><br />Мы ипользуем только экологически чистые средства, и гибко подстраиваемся под ваш график и потребности. Пригласите нас, и ваше пространство станет оазисом чистоты и комфорта.</p>
                             <ul class="difference__list">
                                 <li class="difference__item">
-                                    <p class="difference__title">
-                                        10<span>+</span>
-                                    </p>
-                                    <p class="difference__description">Лет</p>
+                                    <p class="difference__item-title">10<span>+</span></p>
+                                    <p class="difference__item-description">Лет</p>
                                 </li>
                                 <li class="difference__item">
-                                    <p class="difference__title">
-                                        5 000<span>+</span>
-                                    </p>
-                                    <p class="difference__description">
-                                        Клиентов
-                                    </p>
+                                    <p class="difference__item-title">5 000 <span>+</span></p>
+                                    <p class="difference__item-description">Клиентов</p>
                                 </li>
                                 <li class="difference__item">
-                                    <p class="difference__title">
-                                        20 000<span>+</span>
-                                    </p>
-                                    <p class="difference__description">
-                                        Уборок
-                                    </p>
+                                    <p class="difference__item-title">20 000 <span>+</span></p>
+                                    <p class="difference__item-description">Уборок</p>
                                 </li>
                             </ul>
-                            <button href="" class="difference__button button">
-                                Оставить заявку
-                            </button>
+                            <button data-goto=".contacts" class="difference__button button">Оставить заявку</button>
                         </div>
-                        <img
-                            class="difference__image"
-                            src="img/man.svg"
-                            alt=""
-                        />
+                        <img class="difference__image" src="img/man.svg" alt="Изображение с мужчиной, который моет пол" />
                     </div>
                 </div>
             </section>
-            <section class="section container">
-                <div class="section__body">
-                    <div class="contacts">
+            <section class="contacts">
+                <div class="container">
+                    <div class="contacts__inner">
                         <div class="contacts__body">
-                            <h2 class="contacts__title">
-                                Оставьте заявку на бесплатную оценку стоимости
-                                уборки
-                            </h2>
-                            <p class="contacts__description">
-                                Мы бесплатно рассчитаем стоимость уборки в вашем
-                                помещении и подберем для вас подходящее время.
-                            </p>
-                            <div class="contacts__phone phone">
-                                <img
-                                    class="phone__image"
-                                    src="img/icon-phone.svg"
-                                    alt=""
-                                />
-                                <div class="phone__body">
-                                    <p class="phone__title">ПОЗВОНИТЬ СЕЙЧАС</p>
-                                    <p class="telephone__description">
-                                        8 (414) 567-21-09
-                                    </p>
-                                </div>
-                            </div>
-                            <hr class="contacts__line" />
-                            <p class="contacts__title">Не убедили вас?</p>
-                            <p class="contacts__description">
-                                Оставьте свой телефон и мы свяжемся с вами в
-                                самое ближайшее время.
-                            </p>
-                            <button href="" class="contacts__button button">
-                                Наши услуги
-                            </button>
+                            <h2 class="contacts__title">Оставьте заявку на расчет стоимости уборки</h2>
+                            <p class="contacts__description">Мы бесплатно рассчитаем стоимость уборки в вашем помещении и подберем для вас подходящее время.</p>
+                            <a class="contacts__phone phone" href="tel:">
+                                <span class="phone__icon-wrapper">
+                                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M29.0856 35.3845C29.0732 35.3845 29.0609 35.3845 29.0485 35.3845C23.11 35.19 16.1529 29.4336 11.3595 24.6371C6.55989 19.8407 0.803488 12.8805 0.618288 6.9698C0.550388 4.8956 5.64019 1.2072 5.69259 1.1701C7.01369 0.250395 8.47979 0.577496 9.08169 1.4109C9.48909 1.9757 13.3473 7.8216 13.767 8.4853C14.2022 9.1736 14.1374 10.1983 13.5942 11.2261C13.2948 11.7971 12.3009 13.5441 11.8349 14.359C12.338 15.075 13.6683 16.8313 16.4153 19.5783C19.1654 22.3253 20.9186 23.6587 21.6377 24.1618C22.4526 23.6957 24.1996 22.7019 24.7706 22.4025C25.7829 21.8654 26.8015 21.7975 27.496 22.2235C28.2059 22.6587 34.0364 26.5354 34.5734 26.9088C35.0241 27.2268 35.3142 27.77 35.3728 28.4027C35.4284 29.0416 35.2309 29.7176 34.8204 30.3071C34.7864 30.3565 31.1412 35.3845 29.0856 35.3845Z" fill="#0075FF" />
+                                    </svg>
+                                </span>
+                                <span class="phone__body">
+                                    <span class="phone__title">Позвонить сейчас</span>
+                                    <span class="phone__description">8 (414) 567-21-09</span>
+                                </span>
+                            </a>
                         </div>
                         <form class="contacts__form form" action="get">
-                            <div class="form__fullname form-item">
+                            <div class="form__fullname">
                                 <label for="fullname">Имя</label>
                                 <br />
-                                <input
-                                    id=""
-                                    type="text"
-                                    name="fullname"
-                                    id="fullname"
-                                    placeholder="Введите имя"
-                                />
+                                <input id="fullname" type="text" name="fullname" placeholder="Введите имя" required />
                             </div>
-                            <div class="form__phone form-item">
-                                <label for="">Номер телефона</label>
+                            <div class="form__phone">
+                                <label for="phone">Номер телефона</label>
                                 <br />
-                                <input
-                                    id=""
-                                    type="text"
-                                    placeholder="Введите телефон"
-                                />
+                                <input id="phone" type="text" placeholder="Введите телефон" required />
                             </div>
-                            <div class="form__address form-item">
-                                <label for="">Адрес</label>
+                            <div class="form__address">
+                                <label for="address">Адрес</label>
                                 <br />
-                                <input
-                                    id=""
-                                    type="text"
-                                    placeholder="Введите адрес"
-                                />
+                                <input id="address" type="text" placeholder="Введите адрес" required />
                             </div>
-                            <div class="form__email form-item">
-                                <label for="">Почта</label>
+                            <div class="form__email">
+                                <label for="email">Почта</label>
                                 <br />
-                                <input
-                                    id=""
-                                    type="text"
-                                    placeholder="Введите почту"
-                                />
+                                <input id="email" type="text" placeholder="Введите почту" required />
                             </div>
-                            <div class="form__requested form-item">
-                                <label for="">Услуга</label>
+                            <div class="form__requested">
+                                <label for="requested">Услуга</label>
                                 <br />
-                                <input
-                                    id=""
-                                    type="text"
-                                    placeholder="Выберите услугу"
-                                />
+                                <input id="requested" type="text" placeholder="Выберите услугу" required />
                             </div>
-                            <div class="form__day form-item">
-                                <label for="">Дата уборки</label>
+                            <div class="form__day">
+                                <label for="day">Дата уборки</label>
                                 <br />
-                                <input
-                                    id=""
-                                    type="text"
-                                    placeholder="Введите день"
-                                />
+                                <input id="day" type="text" placeholder="Введите день" required />
                             </div>
                             <div class="form__note form-item">
-                                <label for="">Комментарий</label>
+                                <label for="note">Комментарий</label>
                                 <br />
-                                <textarea
-                                    name=""
-                                    id=""
-                                    cols="30"
-                                    rows="10"
-                                    placeholder="Введите комментарий к заявке"
-                                ></textarea>
+                                <textarea id="note" cols="30" rows="5" placeholder="Введите комментарий к заявке"></textarea>
                             </div>
-                            <input
-                                class="button"
-                                type="submit"
-                                value="Отправить заявку"
-                            />
+                            <input class="form__button button" type="submit" value="Отправить заявку" />
                         </form>
                     </div>
                 </div>
             </section>
         </main>
         <footer class="footer">
-            <div class="footer__inner container">
-                <div class="footer__header">
-                    <div class="footer__quality">
-                        <p class="footer__quality-title title--l">
-                            Качественная уборка вашего дома
-                        </p>
-                        <p class="footer__quality-description description">
-                            Мы работаем с квартирами, офисами и производстствами
-                            .
-                        </p>
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__header">
+                        <div class="footer__quality">
+                            <p class="footer__quality-title">Качественная уборка вашего дома</p>
+                            <p class="footer__quality-description">Мы работаем с квартирами, офисами и производстствами.</p>
+                        </div>
+                        <div class="footer__adress">
+                            <p class="footer__adress-title">Наши контакты</p>
+                            <p class="footer__adress-description">Россия, г. Москва, ул. Пушкина, д.12, 900317<br /><br />8 (414) 567-21-09<br /><br />contact@cleaning.com</p>
+                        </div>
+                        <div class="footer__hours">
+                            <p class="footer__hours-title">Часы работы</p>
+                            <p class="footer__hours-description"><span>Понедельник - пятница</span><br />6:00 - 21:00<br /><br /><span>Суббота - воскресенье</span><br />8:00 - 20:00</p>
+                        </div>
+                        <div class="footer__contacts">
+                            <p class="footer__contacts-title">Получите бесплатный расчет</p>
+                            <a class="footer__contacts-phone" href="tel:">8 (414) 567-21-09</a>
+                            <p class="footer__contacts-description">Оставьте заявку на бесплатный расчет или позвоните сами.</p>
+                            <button data-goto=".contacts" class="footer__contacts-button button">Оставить заявку</button>
+                        </div>
                     </div>
-                    <div class="footer__contacts">
-                        <p class="footer__contact-title title--footer">
-                            Наши контакты
-                        </p>
-                        <p class="footer__contacts-adress description">
-                            Россия, г. Москва, ул. Пушкина, 900317
-                        </p>
-                        <p class="footer__contacts-phone description">
-                            8 (414) 567-21-09
-                        </p>
-                        <p class="footer__contacts-email description">
-                            contact@cleaning.com
-                        </p>
+                    <div class="footer__footer">
+                        <a href="/" class="logo"><img src="img/logo.svg" alt="Изображение логотипа" /></a>
+                        <p class="footer__copyrites">Используется в образовательных целях</p>
                     </div>
-                    <div class="footer__hours">
-                        <p class="footer__hours-title title--footer">
-                            Часы работы
-                        </p>
-                        <p class="footer__hours-title title--footer">
-                            Понедельник - пятница
-                        </p>
-                        <p class="footer__hours-desctription description">
-                            6:00 - 21:00
-                        </p>
-                        <p class="footer__hours-title title--footer">
-                            Суббота - воскресенье
-                        </p>
-                        <p class="footer__hours-desctription description">
-                            8:00 - 20:00
-                        </p>
-                    </div>
-                    <div class="footer__contact">
-                        <p class="footer__contact-title title--footer">
-                            Получите бесплатный расчет
-                        </p>
-                        <p class="footer__contact-number title--l">
-                            8 (414) 567-21-09
-                        </p>
-                        <p class="footer__contact-description description">
-                            Оставьте заявку на бесплатный расчет или позвоните
-                            сами.
-                        </p>
-                        <a href="" class="p footer__contact-button button"
-                            >Оставить заявку</a
-                        >
-                    </div>
-                </div>
-                <div class="footer__footer">
-                    <a href="" class="logo"
-                        ><img src="img/logo.svg" alt=""
-                    /></a>
-                    <p class="copyrites">
-                        Cleaning X | Шаблон используется в обучающих целях для
-                        создания партфолио по верстке сайтов
-                    </p>
                 </div>
             </div>
         </footer>
+        <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+            <div class="container">
+                <form class="mobile-overlay__close-button-wrapper" method="dialog">
+                    <button class="mobile-overlay__close-button cross-button" type="submit">
+                        <span class="visually-hidden">Закрыть навигационное меню</span>
+                    </button>
+                </form>
+                <div class="mobile-overlay__body">
+                    <ul class="mobile-overlay__list">
+                        <li class="mobile-overlay__item">
+                            <a href="#" data-goto=".instructions" class="mobile-overlay__link">Сервис</a>
+                        </li>
+                        <li class="mobile-overlay__item">
+                            <a href="#" data-goto=".statistics" class="mobile-overlay__link">Статистика</a>
+                        </li>
+                        <li class="mobile-overlay__item">
+                            <a href="#" data-goto=".services" class="mobile-overlay__link">Услуги</a>
+                        </li>
+                        <li class="mobile-overlay__item">
+                            <a href="#" data-goto=".areas" class="mobile-overlay__link">Зоны</a>
+                        </li>
+                        <li class="mobile-overlay__item">
+                            <a href="#" data-goto=".difference" class="mobile-overlay__link">О нас</a>
+                        </li>
+                        <li class="mobile-overlay__item">
+                            <a href="#" data-goto=".contacts" class="mobile-overlay__link">Контакты</a>
+                        </li>
+                    </ul>
+                    <button data-goto=".contacts" class="mobile-overlay__button button" type="button" onclick="event.preventDefault()">Оставить заявку</button>
+                </div>
+            </div>
+        </dialog>
         <script src="js/script.js"></script>
-        <script
-            src="https://kit.fontawesome.com/637bfcf7d6.js"
-            crossorigin="anonymous"
-        ></script>
+        <script src="https://kit.fontawesome.com/637bfcf7d6.js" crossorigin="anonymous"></script>
     </body>
 </html>

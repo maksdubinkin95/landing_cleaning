@@ -1,0 +1,30 @@
+i {
+    position: absolute;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    line-height: 50px !important;
+    top: 50%;
+    transform: translate(0, -50%);
+    background-color: var(--background-color-white);
+    border: var(--border);
+    border-radius: var(--border-radius-50);
+    color: (--background-color-black);
+    box-shadow: (--box-shadow);
+    cursor: pointer;
+    z-index: 1;
+    &:hover {
+        transition: background-color 0.5s ease 0s;
+        background-color: var(--background-color-blue);
+        color: white;
+    }
+    @include tablet-above {
+        display: none;
+    }
+}
+i:first-child {
+    left: 0;
+}
+i:last-child {
+    right: 0;
+}

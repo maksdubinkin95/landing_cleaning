@@ -1,0 +1,56 @@
+.statistics {
+    padding: var(--padding-y-main) 0;
+    @include desktop {
+        padding: var(--padding-y-desktop) 0;
+    }
+    @include tablet {
+        padding: var(--padding-y-tablet) 0;
+    }
+    @include mobile {
+        padding: var(--padding-y-mobile) 0;
+    }
+    &__title {
+        text-align: center;
+        max-width: 610px;
+        margin: 0 auto 20px;
+        @include tablet {
+            max-width: 530px;
+        }
+    }
+    &__description {
+        text-align: center;
+        max-width: 700px;
+        margin: 0 auto 30px;
+        @include tablet {
+            max-width: 650px;
+        }
+    }
+    &__list {
+        display: flex;
+        justify-content: center;
+        column-gap: 90px;
+        margin-bottom: 50px;
+        &.no-transition {
+            scroll-behavior: auto;
+        }
+        &.dragging {
+            // scroll-snap-type: none;
+            cursor: grab;
+            // user-select: none;
+            // scroll-behavior: auto;
+        }
+        @include tablet {
+            column-gap: 45px;
+        }
+        @include mobile {
+            margin-bottom: 30px;
+        }
+    }
+    &__image {
+        margin: 0 auto;
+        width: 80%;
+        @include mobile {
+            width: 90%;
+        }
+    }
+}
